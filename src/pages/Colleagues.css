@@ -1,17 +1,23 @@
 .card {
   flex: 1 0 200px;
   box-sizing: border-box;
-  margin: 1rem;
   padding: 0.5em;
+  margin: 0rem 0px 1em 0em;
 
   background-color: var(--whiteColor);
   border-radius: 4px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
+@media (min-width: 400px)  {
+  .card {
+    margin: 1em;
+  }
+}
+
 .card h1 {
   font-size: 18pt;
-  margin-top: 0;
+  margin-top: 8px;
   margin-bottom: 8px;
 }
 

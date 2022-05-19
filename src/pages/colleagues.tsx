@@ -11,7 +11,7 @@ const Colleagues: React.FC = () => {
   const { colleagues, isLoading, error } = useContext(ColleaguesContext);
 
   return (
-    <div>
+    <CenterContainer>
       <header>
         <Heading text="The fellowship of the 13|37" />
       </header>
@@ -20,20 +20,17 @@ const Colleagues: React.FC = () => {
         <h3>Failed to colleagues...</h3>
       )}
 
-      <CenterContainer>
-        {isLoading ? (
-          <h3>Loading colleagues...</h3>
-        ) : (
-          <CardGridContainer>
-            {colleagues.map((colleague, key) => (
-              <ColleagueCard colleague={colleague} key={key} />
-            ))}
-          </CardGridContainer>
+      {isLoading ? (
+        <h3>Loading colleagues...</h3>
+      ) : (
+        <CardGridContainer>
+          {colleagues.map((colleague, key) => (
+            <ColleagueCard colleague={colleague} key={key} />
+          ))}
+        </CardGridContainer>
 
-        )}
-      </CenterContainer>
-
-    </div>
+      )}
+    </CenterContainer>
   );
 }
 

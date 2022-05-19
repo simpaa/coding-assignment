@@ -20,7 +20,7 @@ const Colleagues: React.FC = () => {
       <ColleagueFilter onFilter={filterColleagues} />
 
       {error && (
-        <h3>Failed to colleagues...</h3>
+        <h3>Failed to fetch colleagues</h3>
       )}
 
       {isLoading ? (

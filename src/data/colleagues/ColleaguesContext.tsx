@@ -28,7 +28,6 @@ export const ColleaguesContextProvider: React.FC<Props> = ({ children }) => {
 
   const fetchData = () => {
     setIsLoading(true);
-    console.log('called');
     
     fetchColleagues()
       .then((results) => {        

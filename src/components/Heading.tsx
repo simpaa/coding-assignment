@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface Props {
-  text: String;
+  text: string;
 }
 
 const Heading: React.FC<Props> = ({ text }) => {

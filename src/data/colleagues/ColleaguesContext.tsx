@@ -5,7 +5,7 @@ import { fetchColleagues } from "./ColleaguesService";
 
 interface ColleaguesContextState {
   colleagues: Colleague[];
-  isLoading: Boolean;
+  isLoading: boolean;
   error: Error | null;
 }
 
@@ -23,7 +23,7 @@ interface Props {
 
 export const ColleaguesContextProvider: React.FC<Props> = ({ children }) => {
   const [colleagues, setColleagues] = useState<Colleague[]>(contextDefaultValues.colleagues);
-  const [isLoading, setIsLoading] = useState<Boolean>(contextDefaultValues.isLoading);
+  const [isLoading, setIsLoading] = useState<boolean>(contextDefaultValues.isLoading);
   const [error, setError] = useState<Error | null>(contextDefaultValues.error);
 
   const fetchData = () => {

@@ -1,8 +1,8 @@
 export interface Colleague {
-  name: String;
-  office: String;
-  imagePortraitUrl: String;
-  gitHub: String;
-  twitter: String;
-  linkedIn: String;
+  name: string;
+  office: string;
+  imagePortraitUrl: string;
+  gitHub: string;
+  twitter: string;
+  linkedIn: string;
 }

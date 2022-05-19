@@ -1,46 +1,40 @@
-# Getting Started with Create React App
+# 13|37 Code Assignment
+
+This is my take on the 13|37 javascript assignment
+
+According to the instructions for this assignment, I should not spend more than 6 hours in this (I have probably spend a bit more) so the end result are not as good as i would have liked. For example I had no time to style the filter. But anyway i think this says somthing about my coding structure and skills. I'm happy to discuss what could be done better!
+
+## Running the project
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+To use create-react-app and run this porject you need you’ll need to have [Node >= 14.0.0 and npm >= 5.6](https://nodejs.org/en/) on your machine.
 
-In the project directory, you can run:
+### Steps to set up the project locally
+1. Clone the repo to your local machine
+2. Run `npm install` through a command prompt in the project root.
+3. Create a file called `.env` in the project root.
+paste the following content
+```
+REACT_APP_BASE_API_URL=https://api.1337co.de
+REACT_APP_API_KEY=YOUR API KEY
+```
+Replace the text `YOUR API KEY` with your actual api key.
 
-### `npm start`
-
-Runs the app in the development mode.\
+Now you should be all set to run the application. Run `npm start` To run the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
+## Project structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In the `src` you have the js code for the application.
 
-### `npm run build`
+There are 3 folders.
+- `components` - Contains the genric components for the application.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `pages` Contains the pages in the application. Right now there is only one. If we were going to have multiple pages in the application I would probably be using a navigation library like React Router.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `data` Contains the data model for the application including React context provider and logic to fetch data from the web API. The native fetch API is used to fetch data.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

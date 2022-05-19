@@ -1,5 +1,6 @@
 import React from 'react';
 import { Colleague } from '../data/colleagues/Colleague';
+import './ColleagueCard.css';
 
 interface Props {
   colleague: Colleague;

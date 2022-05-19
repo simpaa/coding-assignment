@@ -5,7 +5,6 @@ import CenterContainer from '../components/CenterContainer';
 import ColleagueCard from '../components/ColleagueCard';
 import Heading from '../components/Heading';
 import { ColleaguesContext } from '../data/colleagues/ColleaguesContext';
-import './Colleagues.css';
 
 const Colleagues: React.FC = () => {
 
